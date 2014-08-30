@@ -4,23 +4,23 @@
 {
   title = "Quatuor n°4"
   composer = "Chevalier de Saint-George"
+  opus = 1
 %  tagline = ##f
-%  copyright = "PJ"
 }
 
 \paper
 {
   #(set-paper-size "a4")
-  %top-margin=3\cm
-%  line-width=18.5\cm
-%  head-separation=3\cm 
-  %foot-separation=3\cm
+% top-margin=3\cm
+% line-width=18.5\cm
+% head-separation=3\cm
+% foot-separation=3\cm
 
 }
 
 \language "english"
 
-% global pour mvt 1
+% global for mvt 1
 globalI =
 {
   \numericTimeSignature
@@ -30,7 +30,7 @@ globalI =
 }
 
 
-% global pour mvt 2
+% global for mvt 2
 globalII =
 {
   \numericTimeSignature

@@ -1,8 +1,5 @@
 \version "2.14.2"
 
-% notes de la partie violon 1
-
-
 violinIMI = \relative c'' 
 {
   \repeat volta 2 

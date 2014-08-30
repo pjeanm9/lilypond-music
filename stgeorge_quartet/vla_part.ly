@@ -5,7 +5,7 @@
 
 
 \new Staff
-\with {instrumentName = "Alto"}
+\with {instrumentName = "Viola"}
 {
   \globalI
   \clef alto

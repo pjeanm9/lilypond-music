@@ -4,9 +4,9 @@
 \include "v1_notes.ily"
 
 
-% premier mvt
+% 1st mvt
 \new Staff
-\with {instrumentName = "Violon 1"}
+\with {instrumentName = "Violin 1"}
 {
   \globalI
   \clef treble

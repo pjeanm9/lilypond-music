@@ -38,5 +38,5 @@ score.pdf: score.ly util.ly $(NOTES)
 clean:
 	$(RM) $(PSPARTS)
 	$(RM) $(PDFPARTS)
-	$(RM) score.pdf
+	$(RM) score.pdf score.ps
 	$(RM) *~

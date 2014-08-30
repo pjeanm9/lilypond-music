@@ -5,7 +5,7 @@
 
 
 \new Staff
-\with {instrumentName = "Violon 2"}
+\with {instrumentName = "Violin 2"}
 {
   \globalI
   \clef treble

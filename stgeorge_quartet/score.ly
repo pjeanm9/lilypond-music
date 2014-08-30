@@ -1,9 +1,8 @@
 \version "2.14.2"
 
-
 \include "util.ly"
 
-% inclusion des notes
+% include notes
 \include "v1_notes.ily"
 \include "v2_notes.ily"
 \include "vla_notes.ily"
