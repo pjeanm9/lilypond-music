@@ -4,7 +4,7 @@
 
 Current contents:
 
-_Chevalier de Saint-George__
+__Chevalier de Saint-George__
 * String quartet n°4, op.1 in C minor
 
 __Niccolò Paganini__
