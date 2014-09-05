@@ -9,4 +9,5 @@ __Chevalier de Saint-George__
 
 __Niccolò Paganini__
 * Caprices for violin solo, op.1
+ - n°13 in G minor
  - n°16 in G minor
