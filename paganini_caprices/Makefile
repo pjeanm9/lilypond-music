@@ -14,16 +14,15 @@ VIEWER= evince
 
 .SUFFIXES: .ily .ly .pdf .ps
 
-$(SCORES): $(PDFSCORES)
+$(SCORES): % : %.pdf
 
-$(PDFSCORES): $(PSSCORES)
-	$(GS) $<
+%.pdf: %.ly
+	$(LILY_CMD) $<
+	$(GS) $(subst .pdf,.ps,$@)
 	$(VIEWER) $@
 
 
-$(PSSCORES): $(SOURCES)
-	$(LILY_CMD) $< 
-
+.PHONY: clean
 
 clean:
 	$(RM) $(PSSCORES)
