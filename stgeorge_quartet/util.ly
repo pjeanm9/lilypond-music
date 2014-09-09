@@ -37,4 +37,7 @@ globalII =
   \time 2/4
   \tempo "Rondeau"
   \key c \minor
+
+  \set Timing.beamExceptions = #'()
+  \set Timing.beatStructure = #'(2) % quavers by 4
 }
