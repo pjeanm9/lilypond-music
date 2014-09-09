@@ -115,5 +115,86 @@ violinIIMI = \relative c'
 
 violinIIMII = \relative c''
 {
-
+  \repeat volta 2
+  {
+    g4.\p af8 |
+    c,4( b8) c-. |
+    d( ef f ef) |
+    ef4( d) |
+    g4. af8 | %m5
+    c,4( b8) c-. |
+    f( d c b) |
+    b4( c)\mark "fin" |
+  }
+  g'4. af8 |
+  g4 f8 ef | %m10
+  d( cs d ef) |
+  ef4( f8) r |
+  f4. g8 |
+  f4( ef8 d) |
+  c bf c d | %m15
+  d4( ef8) r |
+  r4 r8 g |
+  ef f ef f |
+  g r r g |
+  af f af f | %m20
+  g r r4 |
+  f4. af8 |
+  af( g) r af, |
+  af4( g8) r |
+  g'4( af) | %m25
+  g( af) |
+  g2 |
+  r8 c, f g |
+  af4. g8 |
+  f4. ef8 | %m30
+  ef( d) d( c) |
+  b4 r |
+  c2 |
+  d4 g8( f) |
+  f-. ef-. d-. c-. | %m35
+  g'4 g, \bar "||" |
+  g'4. af8 |
+  c,4( b8) c-. |
+  d( ef f ef) |
+  ef4( d) | %m40
+  g4. af8 |
+  c,4( b8) c-. |
+  f( d c b) |
+  b4( c) |
+  \key c \major
+  \repeat volta 2
+  {
+    \once\override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
+    \mark\markup{majeur}
+    e8\p( c e c) | %m45
+    f( c f g) |
+    a-. f-. e-. d-. |
+    e( g,) e'( g,) |
+    e' c e c |
+    f c f g | %m50
+    a f e d |
+    e4. g8 |
+  }
+  \mark\markup{mineur}
+  g4\f fs16( g a gs) |
+  g4. e8 |
+  f e d c | %m55
+  c4 b8 g' |
+  g4 fs16( g a g) |
+  g4. g'8 |
+  b,-. c-. g-. a-. |
+  b( d f d) | %m60
+  e( g f e) |
+  d( e d c) |
+  b4.\fermata r8 \bar "||" |
+  \key c \minor
+  g4. af8 |
+  c,4( b8) c-. | %m65
+  d( ef f ef) |
+  ef4( d) |
+  g4. af8 |
+  c,4( b8) c-. |
+  f( d c b) | %m70
+  b4( c)\mark "D.C." \bar "|." |
 }
