@@ -115,10 +115,6 @@ violaMI = \relative c'
 
 violaMII = \relative c'
 {
-
-  \set Timing.beamExceptions = #'()
-  \set Timing.beatStructure = #'(2) %pour avoir les croches par 4
-
   \repeat volta 2
   {
     c8\p ef4( f8) |
@@ -171,8 +167,9 @@ violaMII = \relative c'
   \key c \major
   \repeat volta 2
   {
-				%\once \override TextScript #'self-alignment-X = #0.7 %texte decale à gauche
-    c4.\p^\markup{majeur} e8 | %m45
+    \once\override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
+    \mark\markup{majeur}
+    c4.\p e8 | %m45
     d4. e8 |
     f-. d-. c-. b-. |
     \appoggiatura d c4. g8 |
@@ -181,8 +178,8 @@ violaMII = \relative c'
     f-. d-. c-. b-. |
     g4. <g g'>8
   }
-				%\once \override TextScript #'Y-offset = #4 %rehausser le texte
-  g'4\f^\markup{mineur} fs16( g a g) |
+  \mark\markup{mineur}
+  g'4\f fs16( g a g) |
   g4. r8 |
   R2 | %m55
   r8 fs( g) g |

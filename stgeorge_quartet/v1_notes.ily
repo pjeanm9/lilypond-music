@@ -111,10 +111,6 @@ violinIMI = \relative c''
 
 violinIMII = \relative c'''
 {
-
-  \set Timing.beamExceptions = #'()
-  \set Timing.beatStructure = #'(2) %pour avoir les croches par 4
-
   \repeat volta 2
   {
     g4.\p af8 |
@@ -163,8 +159,9 @@ violinIMII = \relative c'''
   \key c \major
   \repeat volta 2
   {
-    \once \override TextScript #'self-alignment-X = #0.5 %texte decale à gauche
-    c4.\p^\markup{majeur} e8 | %m45
+    \once\override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
+    \mark\markup{majeur}
+    c4.\p e8 | %m45
     \appoggiatura e d4. e8 |
     f-. d-. c-.\trill b-. |
     c4 c8 g |
@@ -173,8 +170,8 @@ violinIMII = \relative c'''
     f-. d-. c-.\trill b-. |
     c4. g8 |
   }
-  \once \override TextScript #'Y-offset = #4 %rehausser le texte
-  g4\f^\markup{mineur} fs16( g a g) |
+  \mark\markup{mineur}
+  g4\f fs16( g a g) |
   g4. g'8 |
   d( e) f-. e-. | %m55
   e4( d8) g, |

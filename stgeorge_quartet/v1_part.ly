@@ -3,6 +3,10 @@
 \include "util.ly"
 \include "v1_notes.ily"
 
+\paper
+{
+  print-page-number = ##f
+}
 
 % 1st mvt
 \new Staff
@@ -11,8 +15,7 @@
   \globalI
   \clef treble
   \violinIMI
- }
-
+}
 
 % 2nd mvt
 \new Staff

@@ -3,7 +3,12 @@
 \include "util.ly"
 \include "v2_notes.ily"
 
+\paper
+{
+  print-page-number = ##f
+}
 
+% 1st mvt
 \new Staff
 \with {instrumentName = "Violin 2"}
 {
