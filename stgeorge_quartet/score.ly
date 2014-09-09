@@ -10,7 +10,7 @@
 
 
 
-violinIPart = \new Staff
+violinIPartI = \new Staff
 \with {instrumentName = "Vln. 1"}
 {
   \globalI
@@ -18,7 +18,15 @@ violinIPart = \new Staff
   \violinIMI
 }
 
-violinIIPart = \new Staff
+violinIPartII = \new Staff
+{
+  \globalII
+  \clef treble
+  \violinIMII
+}
+
+
+violinIIPartI = \new Staff
 \with {instrumentName = "Vln. 2"}
 {
   \globalI
@@ -26,8 +34,15 @@ violinIIPart = \new Staff
   \violinIIMI
 }
 
+violinIIPartII = \new Staff
+{
+  \globalII
+  \clef treble
+  \violinIIMII
+}
 
-violaPart = \new Staff
+
+violaPartI = \new Staff
 \with {instrumentName = "Alto"}
 {
   \globalI
@@ -35,25 +50,50 @@ violaPart = \new Staff
   \violaMI
 }
 
+violaPartII = \new Staff
+{
+  \globalII
+  \clef alto
+  \violaMII
+}
 
-celloPart = \new Staff 
+
+celloPartI = \new Staff
 \with {instrumentName = "Cello"}
 {
   \globalI
   \clef bass
-  \celloMI 
+  \celloMI
 }
 
+celloPartII = \new Staff
+{
+  \globalII
+  \clef bass
+  \celloMII
+}
 
 
 \score
 {
 \new StaffGroup
   <<
-    \violinIPart
-    \violinIIPart
-    \violaPart
-    \celloPart
+    \violinIPartI
+    \violinIIPartI
+    \violaPartI
+    \celloPartI
+  >>
+  \layout { }
+}
+
+\score
+{
+\new StaffGroup
+  <<
+    \violinIPartII
+    \violinIIPartII
+    \violaPartII
+    \celloPartII
   >>
   \layout { }
 }
