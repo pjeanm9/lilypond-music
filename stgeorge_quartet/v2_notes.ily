@@ -9,7 +9,7 @@ violinIIMI = \relative c'
     g,( d' b d)  g,( d' b d) |
     c( ef g c) ef4 ef,8( g) |
     f( af f af) ef( g d f) |
-    g,( ef' c ef)  g,( ef' c ef) | %m5
+    g,\p( ef' c ef)  g,( ef' c ef) | %m5
     g,( d' b d)  g,( d' b d) |
     g,( ef' c ef)  g,( ef' c ef) |
     af,( c af c) g( c g ef') |

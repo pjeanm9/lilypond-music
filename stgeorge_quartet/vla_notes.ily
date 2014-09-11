@@ -10,7 +10,7 @@ violaMI = \relative c'
     f |
     g |
     af,2 g4 g |
-    ef1 | %m5
+    ef1\p | %m5
     f |
     g |
     af2 g4( g) |

@@ -9,7 +9,7 @@ violinIMI = \relative c''
     d2.( f4) | %m3
     ef( ef16 d ef f) g4( c,) | %m4
     ef8( d c2) b4 | %m5
-    c,2.( ef4) | %m6
+    c,2.\p( ef4) | %m6
     d2.( f4) | %m7
     ef4 ef16( d ef f) g4 c, | %m8
     ef8( d c2) b4 | %m9
@@ -44,7 +44,7 @@ violinIMI = \relative c''
     c4.( d16 ef f,8-.) f( g af) | %m38
     bf\f( c16 d ef f g af) bf8( g d ef) | %m39
     d16-3( c b c) ef( c ef c) bf( g bf g)  bf( af g f) | %m40 
-    e4 r4 r4 df'( | %m41
+    ef4 r4 r4 df'( | %m41
     c) c r4 bf,8( af) | %m42
     g16 ef'( d ef)  g ef( d ef)  bf' ef,( d ef)  ef' ef,( d ef) | %m43
     af, ef'( d ef)  af ef( d ef)  c' ef,( d ef)  ef' ef,( d ef) | %m44

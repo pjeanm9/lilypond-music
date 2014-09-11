@@ -10,7 +10,7 @@ celloMI = \relative c'
     r g' b g |
     c2 r4 ef, |
     f f g g, |
-    r c' c, c | %m5
+    r\p c' c, c | %m5
     r g' b g |
     c2 r4 ef, |
     f f g g, |
