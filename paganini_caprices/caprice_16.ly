@@ -41,4 +41,18 @@
   a\f c''-4 a-3 c  f, c' ef,-3 c'-4  c,-2 c'-4 a,-0 c' |
   c,,\f ef a-0 c  d ef b-1\f d  c a ef c |
   d\f d''-4 bf-2 d  f, d' d, d'  bf,-3 d' f,,_1 d'' |
+  g,,-1\f ef''-4( d-3 ef-4)  f,,-1\f d''-4( cs d-4)  e,,-1\f cs''-4( c cs-4) | %m25
+  f,,-1\f d''-4( cs d-4)  ef,,-1\f c''-4( b c-4)  d,,-0\f bf''-4( a bf) |
+  ef,,_1\(( g_3) g_3( bf)  bf-1^\markup{A}( ef) ef-2( g)  g-1^\markup{E}( bf) bf-1( ef-4)\) |
+  ef,,_1\(( af_4) af_2( c)  c-1( ef) ef-2( af-4)  af-1( c-3) c( ef-4)\) |
+  ef,,_1\(( a_4) a_2( c)  c-1( ef) ef-1( a-4)  a-1( c) c-2( ef)\) |
+  d-3( f-4\p a,-1 c  bf d fs,-1 a  g bf d,-1 f | %m30
+  ef) g( b,-1 d  c bf'-4_\markup{E} a-3 af-2  g-1 gf-2 f-1 e-0) |
+  g->( f d bf  g e gf f  e f ef c |
+  bf) bf''-4\(( a-3 af-2  g-1\f gf-2 f-1 e-0)  g-3\f( gf-2 f-1 e-0) |
+  g\f( gf f e-0)\)  ef-4\f( d c bf  a\f af_3 g_2 fs_1 |
+  g-2\f) bf'-3 d,,-0\f g'-2  c,,\f ef' bf,\f d'  a,\f c' g, bf'-4 | %35
+  d,_0\f a'_0 fs d'  a-0 fs'-3 d a'  fs_\markup{A} d' a fs'-4 |
+  a,,-0 c'-4 ef,,-1 a'-3  d,,_0 fs'_1 c, ef'  bf, d' a, c' |
+  g, bf'_3 g d'  bf g' d bf'  g-1_\markup{A} d' bf g' |
 }
