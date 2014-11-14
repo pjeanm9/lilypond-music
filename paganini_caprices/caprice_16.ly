@@ -51,8 +51,21 @@
   g->( f d bf  g e gf f  e f ef c |
   bf) bf''-4\(( a-3 af-2  g-1\f gf-2 f-1 e-0)  g-3\f( gf-2 f-1 e-0) |
   g\f( gf f e-0)\)  ef-4\f( d c bf  a\f af_3 g_2 fs_1 |
-  g-2\f) bf'-3 d,,-0\f g'-2  c,,\f ef' bf,\f d'  a,\f c' g, bf'-4 | %35
+  g-2\f) bf'-3 d,,-0\f g'-2  c,,\f ef' bf,\f d'  a,\f c' g, bf'-4 | %m35
   d,_0\f a'_0 fs d'  a-0 fs'-3 d a'  fs_\markup{A} d' a fs'-4 |
   a,,-0 c'-4 ef,,-1 a'-3  d,,_0 fs'_1 c, ef'  bf, d' a, c' |
   g, bf'_3 g d'  bf g' d bf'  g-1_\markup{A} d' bf g' |
+  f-.-4_\markup{E} d-3( b-1) g-.-2  b( g) f d(  b) g-. f( d_0) |
+  c-. ef( d) f-.  ef( g) fs-. a(  g) bf-. a( c) | %m40
+  bf-. d( c) ef-.  d( fs) e-.-0 g(  fs) a-. g( bf-4) |
+  a-.-1 c( bf) d-.  g,-1( bf) a-. c(  f,!-1) a-. g( bf) |
+  ef,-.-1 g( f) a-.  d,-1( f) ef-. g(  c,-1) ef-. d( f) |
+  bf,-.-1 d( c) ef-.  a,-0( bf) b-. c(  cs-2) d-. ef( c) |
+  bf-1 d'-4 a,-2_\markup{\finger (0} c'_\markup{\finger 3)}  g,-1 bf'-2 d,,-0 g'-2  fs c,_3 bf a-1( | %m45
+  g-.) bf''-4\f(^\markup{E} a-3 af-2  g-1) gf-2\f( f-1 e-0  ef-3 d-2) d,-.-0\upbow fs'-.-4\downbow |
+  g,,-.\upbow bf''-4\f( a af-2  g-1) gf-2\f( f-1 e  ef-3 d-2) d,-.\upbow fs'-.-4\downbow |
+  g,,-.\upbow bf'_4\f(^\markup{D} a!_3 af_2  g_1) gf_3\f( f!_2 e_1  ef_1 d) d''-.-2\upbow fs-.-4\downbow |
+  g,,,-.\upbow bf'_4\f(^\markup{D} a!_3 af_2  g_1) gf_3\f( f!_2 e_1  ef_1 d) d''-.-2 fs-.-4 |
+  g,,,8-.\upbow g'''16-4(\f\downbow d-2)  g,,,8-. d'''16-3(\f bf)  g,,8-. bf''16-3(\f g) | %m50
+  g,,8-. g''16_4(\f d_1)  g,,8-. d''16_3(\f bf)  g,8-. bf'16_3(\f g_1) |
 }
