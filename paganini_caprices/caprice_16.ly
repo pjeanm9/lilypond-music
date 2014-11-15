@@ -65,7 +65,9 @@
   g-.) bf''-4\f(^\markup{E} a-3 af-2  g-1) gf-2\f( f-1 e-0  ef-3 d-2) d,-.-0\upbow fs'-.-4\downbow |
   g,,-.\upbow bf''-4\f( a af-2  g-1) gf-2\f( f-1 e  ef-3 d-2) d,-.\upbow fs'-.-4\downbow |
   g,,-.\upbow bf'_4\f(^\markup{D} a!_3 af_2  g_1) gf_3\f( f!_2 e_1  ef_1 d) d''-.-2\upbow fs-.-4\downbow |
-  g,,,-.\upbow bf'_4\f(^\markup{D} a!_3 af_2  g_1) gf_3\f( f!_2 e_1  ef_1 d) d''-.-2 fs-.-4 |
+  g,,,-.\upbow bf'_4\f(^\markup{D} a!_3 af_2  g_1) gf_3\f( f!_2 e_1  ef_1 d) d''-.-2 fs-.-4 | \break
   g,,,8-.\upbow g'''16-4(\f\downbow d-2)  g,,,8-. d'''16-3(\f bf)  g,,8-. bf''16-3(\f g) | %m50
   g,,8-. g''16_4(\f d_1)  g,,8-. d''16_3(\f bf)  g,8-. bf'16_3(\f g_1) |
+  g,4\ff  g16( a bf b)  c( cs d bf) |
+  \acciaccatura <g d' bf'>8( g''2) r4\fermata \bar "|." |
 }
