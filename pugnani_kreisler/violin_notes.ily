@@ -37,4 +37,46 @@ violin = \relative c'
 
   e4(\downbow e16 b) e-- fs--  g-- e-- g-- a-- |
   b-- g-- b-- ds--  e-- b-- e-- fs--  g-- e-- g-- a-- |
+  b4( b16) gs( f e)  d f d c | %25
+  b d b a  gs( b gs) f  e( f e d) |
+  c4( c16 a) c e  f c f g |
+  a f a b  c a c f  a( f a c) |
+  e4( e16 cs) bf a  g bf g f |
+  e g e d  cs( e cs) bf  a( bf a g) | %30
+  f4( f16 d) f a  bf f bf d |
+  gs,4( gs16 e) gs b!  e d c b |
+  a4( a16 e) a b  c a c e |
+  g4( g16) e, g as  cs e g( e) |
+  b'4.\f fs16 g  fs ds^\markup{\italic allargando} b ds | %35
+  fs g fs ds  b c b g  fs b g fs |
+  b,2.\fermata \bar "||" |
+
+  \tempo "Tempo I"
+  \time 4/4
+
+  e4 b e b' |
+  e b e b' |
+  e e, b' b, | %40
+  e e, b' b, |
+  e'' e, b' b, |
+  e e, b' b, |
+  c'' e, g c, |
+  fs a, c d, | %45
+  b'' d, fs b, |
+  e g, b c, |
+  a'' c, e a, |
+  b fs' g e |
+  \acciaccatura { e16[ fs] } e4 ds e fs | %50
+  b, b' e d! |
+  c d e g |
+  fs e d a |
+  b d g, fs |
+  e g c, b | %55
+  \override TextSpanner #'(bound-details left text) = "rit."
+  \textSpannerDown
+  as cs fs\startTextSpan cs' |
+  ds b e e, |
+  c'! a, a' e' |
+  b' e,, b'\stopTextSpan b,,\downbow |
+  e1 \fermata\downbow \bar "||" | %60
 }
