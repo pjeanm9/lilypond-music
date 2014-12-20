@@ -11,6 +11,6 @@ __Fritz Kreisler__
 * Praeludium and Allegro in the style of Pugnani
 
 __Niccolò Paganini__
-* Caprices for violin solo, op.1
+* Caprices for solo violin, op.1
  - n°13 in G minor
  - n°16 in G minor
