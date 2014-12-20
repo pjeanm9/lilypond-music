@@ -79,4 +79,26 @@ violin = \relative c'
   c'! a, a' e' |
   b' e,, b'\stopTextSpan b,,\downbow |
   e1 \fermata\downbow \bar "||" | %60
+
+  \tempo "Allegro molto moderato"
+  \time 3/4
+
+  \set Timing.measurePosition = #(ly:make-moment -1 8)
+  b'8(\upbow\p |
+  e-.) d16 c b8-. a-. g-. fs-. |
+  e16-- fs-- e-- fs--  g-- a-- g-- a--  b-- g'-- fs-- e-- |
+  ds^\markup{\italic simile} fs a, c  b a g fs  a g fs e |
+  ds fs b, as  b cs ds e  fs g a b |
+  g-.\p b-. e-. b  a-. c-. e-. c  g-. b-. e-. b | %65
+  a(-0\f g'-3) c-- g--  e'-- g,-- c-- g--  e( g e c) |
+  d,-0-.\p c'-. fs-. c-.  d,-. d'-. fs-. d-.  d,-. c'-. fs-. c-. |
+  g(-1 fs') b fs  d' fs, b fs  d( fs d b) |
+  e,-.\p b'-. g'-. b,-.  e,-. c'-. g'-. c,-.  e,-. b'-. g'-. b,-. |
+  fs(-1 e') a e  c' e, a e  c( e c a) | %70
+  ds, b' fs' b,  e, b' g' b,  g b e b |
+  b,( fs') b cs  ds b fs' ds  b'8 b,(\upbow |
+  e-.) d16 c b8-. a-. g-. fs-. |
+  e16 fs e fs  g a g a  b g' fs e |
+  ds fs a, c  b a g fs  a g fs e | %75
+  ds fs b, as  b cs ds e  fs g a b |
 }
