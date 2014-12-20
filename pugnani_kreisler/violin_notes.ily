@@ -103,9 +103,9 @@ violin = \relative c'
   ds fs b, as  b cs ds e  fs g a b |
 }
 
-violinB =
+violinB = % breaks
 {
   s1*22
-  s2.*15\break
-  s1*23\pageBreak
+  s2.*15\break % Tempo I
+  s1*23\pageBreak % Allegro
 }

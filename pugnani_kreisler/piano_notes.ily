@@ -198,7 +198,7 @@ pianoL = \relative c,,
   <b b'>2 r4 |
 }
 
-pianoD =
+pianoD = % dynamics
 {
   s1\f
   s1*17
@@ -227,7 +227,7 @@ pianoD =
   s2.*25
 }
 
-pianoB =
+pianoB = % breaks
 {
   s1*22\pageBreak % Andante
   s2.*15\break % Tempo I
