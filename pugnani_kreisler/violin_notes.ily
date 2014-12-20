@@ -102,3 +102,10 @@ violin = \relative c'
   ds fs a, c  b a g fs  a g fs e | %75
   ds fs b, as  b cs ds e  fs g a b |
 }
+
+violinB =
+{
+  s1*22
+  s2.*15\break
+  s1*23\pageBreak
+}

@@ -17,7 +17,11 @@
     \violin
 
     \new PianoStaff <<
-      \new Staff = "upper" \pianoR
+      \new Staff = "upper"
+      <<
+	\pianoR
+	\pianoB
+      >>
       \new Dynamics = "dynamics" \pianoD
       \new Staff = "lower" \pianoL
     >>

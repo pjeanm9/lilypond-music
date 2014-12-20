@@ -7,7 +7,8 @@
 
 \score
 {
-
-  \violin
-
+  \new Staff <<
+    \violin
+    \violinB
+  >>
 }

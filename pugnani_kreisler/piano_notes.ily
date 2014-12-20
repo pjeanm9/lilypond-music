@@ -226,3 +226,10 @@ pianoD =
   s2.\p
   s2.*25
 }
+
+pianoB =
+{
+  s1*22\pageBreak % Andante
+  s2.*15\break % Tempo I
+  s1*23\break % Allegro
+}
