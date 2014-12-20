@@ -76,7 +76,31 @@ pianoR = \relative c
   <a! b ds fs>2 <g e' g> |
   <a c e a>1 |
   <a b e fs b>2 <b ds fs b>4^> <b ds fs b>^> |
-  <e g b e>1\fermata \bar "||" | %60
+  <e g b e>1\fermata \bar "||"  %60
+
+  \tempo "Allegro molto moderato"
+  \time 3/4
+
+  \set Timing.measurePosition = #(ly:make-moment -1 8)
+  r8 |
+  <b e g>8. a'16 <b, e b'>8-. <c e a>-. <e g>-. <b ds fs>-. |
+  <b e>2 <b e b'>4 |
+  <b ds fs> <b fs' a> <b e g> |
+  <b ds fs>2 r4 |
+  <d! e g>( <c fs a> <b g' b>) | %65
+  <c g' c>2. |
+  <c e fs>4( <c d fs> <a c fs>) |
+  <b fs' b>2. |
+  <b d e>4( <a c e> <g b e>) |
+  <a c e a>2. | %70
+  <c fs a>4 <c e g> <g b cs e> |
+  \change Staff = "lower"
+  <fs b ds fs>2
+  \change Staff = "upper" r4 |
+  <b e g>8. a'16 <b, e b'>8 <c e a> <e g> <b ds fs> |
+  <b e>2 <b e b'>4 |
+  <b ds fs> <b fs' a> <b e g> | %75
+  <b ds fs>2 r4 |
 }
 
 pianoL = \relative c,,
@@ -130,27 +154,48 @@ pianoL = \relative c,,
 
   <e, e'>1 |
   <e e'> |
-  <e e'> |
+  <e e'> | %40
   <e e'> |
   <e e'> |
   <e e'> |
   <a a'> |
-  <d d'> |
+  <d d'> | %45
   <g, g'> |
   <c c'> |
   <fs, fs'> |
   <b b'> |
-  <b b'>2 <a a'> |
+  <b b'>2 <a a'> | %50
   <gs gs' e'>1 |
   <a a'>2 <c c'> |
   <d d'> <fs, fs'> |
   <g g'> <b b'> |
-  <c c'> <e e'> |
+  <c c'> <e e'> | %55
   <fs e'>1 |
   <b, b'>2 <c c'> |
   <fs, fs'>1 |
   <b b'>2 <b' a'>4-> <b a'>-> |
-  \acciaccatura <e,, e'>8( <b'' e g>1)\fermata \bar "||" |
+  \acciaccatura <e,, e'>8( <b'' e g>1)\fermata \bar "||"  %60
+
+  \time 3/4
+
+  \set Timing.measurePosition = #(ly:make-moment -1 8)
+  r8 |
+  e8. fs16-. g8-. a-. b-. <b, a'>-. |
+  <e g>2 <g,, g'>4 |
+  <b b'> <ds b'> <e b'> |
+  <b b'>2 r4 |
+  <e e'>2. | %65
+  <a e'> |
+  <d, d'> |
+  <g d'> |
+  <c, c'> |
+  <fs, fs'> | %70
+  <b b'>4 <b b'> <b b'> |
+  <b b'>2 r4 |
+  e'8. fs16 g8 a b <b, a'> |
+  <e g>2 <g,, g'>4 |
+  <b b'> <ds b'> <e b'> | %75
+  <b b'>2 r4 |
 }
 
 pianoD =
@@ -177,4 +222,7 @@ pianoD =
   s2\<
   s2  s4 s4\!\stopTextSpan
   s1\f
+  s8 % Allegro
+  s2.\p
+  s2.*25
 }
