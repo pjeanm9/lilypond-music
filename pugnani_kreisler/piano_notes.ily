@@ -101,6 +101,19 @@ pianoR = \relative c
   <b e>2 <b e b'>4 |
   <b ds fs> <b fs' a> <b e g> | %75
   <b ds fs>2 r4 |
+  << { <b b'>2.\arpeggio }
+     \\ { \change Staff = "lower"
+	  a4(\arpeggio g) fs
+	  \change Staff = "upper" }
+     \\ { fs'4( e) <d b' d> }
+   >> |
+  << { <b' d>( <a c>) <g c e> } \\ { e2. } >> |
+  << { e4( d) } \\ { <c fs>2 } >> <d a' c>4 |
+  << { a'( g) } \\ { <d b'>2 } >> <fs b d>4 | %80
+  << { <e g>2 } \\ { d4( c) } >> <b e b'> |
+  <d e b'> <c e a> <c e g> |
+  <b e g> <b e fs b> <b ds fs b> |
+  <g b e>2 r4 |
 }
 
 pianoL = \relative c,,
@@ -196,6 +209,14 @@ pianoL = \relative c,,
   <e g>2 <g,, g'>4 |
   <b b'> <ds b'> <e b'> | %75
   <b b'>2 r4 |
+  <e b'>2. |
+  <a, a'> |
+  <d d'>2 <fs, fs'>4 |
+  <g g'>2. | %80
+  <c c'>2 <g g'>4 |
+  <a a'>2. |
+  <b b'>4 <b' a'> <b a'> |
+  <e, b' e>2 <g, e'>8 r |
 }
 
 pianoD = % dynamics
