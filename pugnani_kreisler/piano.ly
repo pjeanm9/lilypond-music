@@ -17,6 +17,9 @@
     \violin
 
     \new PianoStaff <<
+      \set PianoStaff.connectArpeggios = ##t
+      \override PianoStaff.Arpeggio #'stencil = #ly:arpeggio::brew-chord-slur
+
       \new Staff = "upper"
       <<
 	\pianoR
