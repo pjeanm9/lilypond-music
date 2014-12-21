@@ -101,6 +101,21 @@ violin = \relative c'
   e16 fs e fs  g a g a  b g' fs e |
   ds fs a, c  b a g fs  a g fs e | %75
   ds fs b, as  b cs ds e  fs g a b |
+  a <fs' b> <fs b> <a, fs'>  <g e'> <e' b'> <e b'> <g, e'>
+  <fs d'> <d' b'> <d b'> <fs, d'> |
+  <d e> <b' e> <b e> <d, e>  <c e> <a' e'> <a e'> <c, e>
+  <a g'> <c' e> <c e> <a, g'> |
+  fs' <e' a> <e a> <fs, e'>  <fs d'> <d' a'> <d a'> <fs, d'>
+  <d c'> <c' a'> <c a'> <d, c'> |
+  <b a'> <a' d> <a d> <b, a'>  <b g'> <g' d'> <g d'> <b, g'>
+  <g fs'> <fs' d'> <fs d'> <g, fs'> | %80
+  e' <d' g> <d g> <e, d'>  <e c'> <c' g'> <c g'> <e, c'>
+  <d b'> <b' g'> <b g'> <d, b'> |
+  <d e> <b' e> <b e> <d, e>  <c e> <a' e'> <a e'> <c, e>
+  <a g'> <c' e> <c e> <a, g'> |
+  <b g'> <b' e> <b e> <b, g'>  <b fs'> <b' e> <b e> <b, fs>
+  <b fs> <ds' b'> <ds b'> b, |
+  e( fs) g b  e fs g b  e8 r |
 }
 
 violinB = % breaks
