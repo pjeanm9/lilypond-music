@@ -116,6 +116,30 @@ violin = \relative c'
   <b g'> <b' e> <b e> <b, g'>  <b fs'> <b' e> <b e> <b, fs>
   <b fs> <ds' b'> <ds b'> b, |
   e( fs) g b  e fs g b  e8 r |
+  <g,,, d' b' g'>16\f e'' d e  d b g e  d b g g' | %85
+  e c g a'  e c g b'-4  fs d g, c'-4 |
+  g e g, d''-4  a fs g, e''-4  b g e c' |
+  a-0 fs d' b  g e c' a  fs d c a |
+  <g d' b' g'>\p e'' d e  d b g e  d b g g' |
+  e c g a'  e c g b'  fs d g, c' | %90
+  g e g, d''  a fs g, e''  b g e c' |
+  a fs d' b  g e cs' b  as fs e cs |
+  <b fs' d' b'>\f g'' fs g  fs! d cs b  fs d b b' |
+  g e cs' b  fs d' b g  e' cs b g' |
+  e b e cs  b fs' d b  fs d' b fs | %95
+  g e' b g  e cs' b fs  d' b fs d |
+  <b fs' d' b'>\p fs'' g fs  d cs b fs  d cs b b' |
+  g e cs' b  fs d' b g  e' cs b g' |
+  e b e cs  b fs' d b  fs d' b fs |
+  g e' b g  e cs' b fs  d' b fs d | %100
+  b(\f as) b d  fs b d fs  b b, a' b, |
+  gs'( b) gs e  d b gs e  b d e d' |
+  c!( a,) b c!  e a c e  a a, g' a, |
+  fs'( a) fs d  c a fs d  a c d c' |
+  b( g,) a b  d g-1 b d  g g, fs' g, | %105
+  e'( g) e d  c g e d  c e g b |
+  a( a,) c e  fs a c e  fs a, e'( a,) |
+  ds b fs b  ds b fs' ds  b'8 b,(\upbow |
 }
 
 violinB = % breaks
