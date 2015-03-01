@@ -135,9 +135,7 @@ pianoR = \relative c
   <b e>2 <b e b'>4 | %110
   <b ds fs> <b fs' a> <b e g> |
   <b ds fs>4 r r |
-  \override Stem #'direction = #UP
-  <g b e>8 e'16^. fs^.  g8^. g16^. a^. b8^. <e, gs b e>_.\noBeam |
-  \revert Stem #'direction
+  \su <g b e>8 e'16^. fs^.  g8^. g16^. a^. b8^. <e, gs b e>_.\noBeam\sn |
   <e a c> <c' e>16^. <b d>^.  <a c>8^. << { c16^. b^. a8^. } \\ { e16 d c8_.} >>  <e a c e>^. |
   <a, d fs> d16-. e-.  fs8-. <d fs>16-. <e g>-.  <fs a>8-. <d fs a d>-. | %115
   <d g b> <b' d>16-. <a c>-.  <g b>8 << { b16 a g8 } \\ { d16-. c-. b8} >>  <d g b> |
@@ -150,7 +148,28 @@ pianoR = \relative c
   \repeat unfold 21 { b~ }
   b |
   \clef treble
-  s2 << { b''4 } \\ { b, } >> | %% no ??
+  s2 << { b''4 } \\ { b, } >> |
+  << { r <e g b e>2 } \\ { b2 b4 } >> | %145
+  << { r <b e fs b>2 } \\ { b2 b4 } >> |
+  << { s << { <b' ds fs b> } \\ { <a, b ds fs a> } >> } \\ { b2 b4 } >> |
+  <e g d e>8 <e a d>16 c'  <b, e b'>8 <c e a> <b e g> <a b ds fs> |
+  <g b e>2 <b e b'>4 |
+  <b ds fs> <a b fs' a> <g b e g> | %150
+  <fs b ds fs>2 b4 |
+  s2 e4 |
+  a,8 <a c>16 <b d>  <a c e>8 <c e a> <e a c> <a c e> |
+  <a, d fs>8 r r4 d |
+  g,8 <g b>16 <a c>  <g b d>8 <b d g> <d g b> <g b d> | %155
+  <g, b e>8 r r4 c |
+  s8 <a c>16 <b d>  <a c e>8 <c e a> <e a c> <a c e> |
+  b,4 <b e g b> <c e a c> |
+  \override TextSpanner #'(bound-details left text) = "rit."
+  <b ds fs b> <b e g b>\startTextSpan <c e a c> |
+  <b ds fs b> <b e g b>  <c e a c>8 <e a c e> |
+  <b ds fs b>2\stopTextSpan\fermata r4 |
+  <b e b'> << { a'8[ g] } \\ { <c, e c'>4 } >> <b e fs b>~ |
+  <b e fs b> <b ds fs b>4.^\markup{ \italic rit. } r8 |
+  <e gs b e>2.\fermata \bar "|." |
 }
 
 pianoL = \relative c,,
@@ -282,31 +301,44 @@ pianoL = \relative c,,
   <e g>2 <g,, g'>4 | %110
   <b b'> <ds b'> <e b'> |
   <b b'>4 r r |
-  \override Stem #'direction = #DOWN
-  <e b'>8 g'16-. b-.  e8-.
+  \sd <e b'>8 g'16-. b-.  e8-.
   \change Staff = "upper"
   e16_. fs_. g8_.
   \change Staff = "lower"
-  \revert Stem #'direction
-  <e,, e'>_.\noBeam |
+  \sn <e,, e'>_.\noBeam |
   <a, a'> r r s4 <a a'>8^. |
-  \override Stem #'direction = #DOWN
-  <d  d'>^. fs'16^. a^.  d8^. r r
-  \revert Stem #'direction
-  <d,, d'> | %115
+  \sd <d  d'>^. fs'16^. a^.  d8^. r r \sn  <d,, d'> | %115
   <g, g'> r r s4 <g g'>8 |
   <c c'> fs'!16[ g]  e8 c' r <e,, e'> |
   <fs, fs'> r r s <fs fs'> s |
   <b b'> ds'16 fs  b8 r r <b,, b'> |
   <b b'> cs''16[ d]  cs8 e,16 fs  e8 r | %120
-  \ottava #-1
-  \set Staff.ottavation = #"8"
-  \repeat "tremolo" 8 { b,,32. b' }
+  \ottEight \repeat "tremolo" 8 { b,,32. b' }
   \repeat unfold 22 {
     \repeat "tremolo" 8 { b, b' }
   }
-  << { b2 } \\ { b, } >> s4 | %% no ??
-  \ottava #0
+  << { b2 } \\ { b, } >> \ottZero s4 |
+  << { s4 <b' e g b>2 } \\ { \ottEight <b, b'>2 \ottZero \ottEight <b b'>4 \ottZero } >> | %145
+  << { s4 <b' fs'>2 } \\ { \ottEight <b, b'>2 \ottZero \ottEight <b b'>4 \ottZero } >> | %% not working
+  \ottEight <b b'>2 \ottZero \ottEight <b b'>4 \ottZero |
+  <e e'>8[ <fs fs'>]  <g g'> <a a'> <b b'> <b b'> |
+  <e b' e>2 <g, g'>4 |
+  <b b'> <ds b'> <e b'> | %150
+  <b b'>2  <b b'>4 |
+  << { e'2 } \\ { <e,, e'> } >>  <e' e'>4 |
+  <a, a'>2  <a a'>4 |
+  <d d'>2  <d d'>4 |
+  <g, g'>2  <g g'>4 | %155
+  <c c'>2  <c c'>4 |
+  << { fs'8 } \\ { <fs,, fs'>2 } >>  <fs fs'>4 |
+  <b fs' b> <e, e'> <a a'> |
+  <b fs' b> <e, e'> <a a'> |
+  <b fs' b> <e, e'> <a a'>8 <fs fs'> | %160
+  <b b'>2\fermata r4 |
+  \tempo "Andante"
+  <g g'> <a a'> \acciaccatura { <b b'>8 } <b' fs' a>4~ |
+  <b fs' a> <b fs' a>4.
+  << { s8 <b e gs b>2.\fermata } \\ { <e,, e'>8~ <e e'>2. } >> \bar "|." |
 }
 
 pianoD = % dynamics
@@ -346,9 +378,15 @@ pianoD = % dynamics
   s2.*15
   s8 s8\p s2
   s2.*7
-  s2.\p
+  s2.\p % cadenza
   s2.*22
-  s2.\f
+  s4\f s2
+  s2.*3
+  s4\ff s2
+  s2.*13
+  s4\f s2
+  s4 s4. s8\ff
+  s2.
 }
 
 pianoB = % breaks

@@ -30,12 +30,12 @@ violin = \relative c'
   as cs fs\startTextSpan cs' |
   ds b e e, | %20
   c'! a, a' e' |
-  b' e,, b'\stopTextSpan b,,\downbow \bar "||" |
+  b' e,, b'\stopTextSpan b,,\db \bar "||" |
 
   \tempo "Andante"
   \time 3/4
 
-  e4(\downbow e16 b) e-- fs--  g-- e-- g-- a-- |
+  e4(\db e16 b) e-- fs--  g-- e-- g-- a-- |
   b-- g-- b-- ds--  e-- b-- e-- fs--  g-- e-- g-- a-- |
   b4( b16) gs( f e)  d f d c | %25
   b d b a  gs( b gs) f  e( f e d) |
@@ -77,8 +77,8 @@ violin = \relative c'
   as cs fs\startTextSpan cs' |
   ds b e e, |
   c'! a, a' e' |
-  b' e,, b'\stopTextSpan b,,\downbow |
-  e1 \fermata\downbow \bar "||" | %60
+  b' e,, b'\stopTextSpan b,,\db |
+  e1 \fermata\db \bar "||" | %60
 
   \tempo "Allegro molto moderato"
   \time 3/4
@@ -91,11 +91,11 @@ violin = \relative c'
   ds fs b, as  b cs ds e  fs g a b |
   g-.\p b-. e-. b  a-. c-. e-. c  g-. b-. e-. b | %65
   a(-0\f g'-3) c-- g--  e'-- g,-- c-- g--  e( g e c) |
-  d,-0-.\p c'-. fs-. c-.  d,-. d'-. fs-. d-.  d,-. c'-. fs-. c-. |
+  \sd d,-0-.\p c'-. fs-. c-.  d,-. d'-. fs-. d-.  d,-. c'-. fs-. c-. |
   g(-1 fs') b fs  d' fs, b fs  d( fs d b) |
   e,-.\p b'-. g'-. b,-.  e,-. c'-. g'-. c,-.  e,-. b'-. g'-. b,-. |
   fs(-1 e') a e  c' e, a e  c( e c a) | %70
-  ds, b' fs' b,  e, b' g' b,  g b e b |
+  ds, b' fs' b,  e, b' g' b,  g b e b \sn |
   b,( fs') b cs  ds b fs' ds  b'8 b,(\upbow |
   e-.) d16 c b8-. a-. g-. fs-. |
   e16 fs e fs  g a g a  b g' fs e |
@@ -113,8 +113,8 @@ violin = \relative c'
   <d b'> <b' g'> <b g'> <d, b'> |
   <d e> <b' e> <b e> <d, e>  <c e> <a' e'> <a e'> <c, e>
   <a g'> <c' e> <c e> <a, g'> |
-  <b g'> <b' e> <b e> <b, g'>  <b fs'> <b' e> <b e> <b, fs>
-  <b fs> <ds' b'> <ds b'> b, |
+  <b g'> <b' e> <b e> <b, g'>  <b fs'> <b' e> <b e> <b, fs'>
+  \sd <b fs'> <ds' b'> <ds b'> b, \sn |
   e( fs) g b  e fs g b  e8 r |
   <g,,, d' b' g'>16\f e'' d e  d b g e  d b g g' | %85
   e c g a'  e c g b'-4  fs d g, c'-4 |
@@ -176,6 +176,32 @@ violin = \relative c'
   c a' e-0 fs!  ds' e,-0 ds c'  e,-0 c a' e-0 |
   cs as' e-0 g  e' e,-0 e cs'  e,-0 cs as' e-0 |
   as, g' e-0 g,  e'( cs) cs as  g e cs as\! |
+  b8\f <g' b e>16 <g b e>  <g b e>8 <a c e>\db <fs a e'>\db <a c e>\db |
+  <g b e>\db b,16 b  b8 \sd <g' b e>\db <e b' g'>\db <g b e>\db \sn | %145
+  <fs b e>\db b,16 b  b8 <fs' b e>\db <g b e>\db <fs b e>\db |
+  <fs b e>\db b,16 b  b8 <fs' ds' b'>\db b,\db b''\db |
+  e\ff d16 c  b8 a g fs |
+  e16 ds e fs  g\trill fs g a  b g fs e |
+  ds fs a, c  b a g fs  a g fs e | %150
+  ds fs b, as  b cs ds e  fs g a fs |
+  e8 <e b' e>16 <fs b e>  <g b e>8 <gs b e>\db <c e e>\db <b d e>\db |
+  <a c e>\db a,16 c  e a c e  a c a g |
+  fs8 <d, c' fs>16 <d d' fs>  <d e' fs>8 <d e' fs>\db <d d' fs>\db <d c' fs>\db |
+  <g, d' b' fs'>\db g16 b  d g b d  g b g fs | %155
+  e8 <c, e b'>16 <c e b'>  <c e b'>8 <e b' e>\db <fs a e'>\db <g b e>\db |
+  <a c e>\db a,16 c  e a c e  a g fs e |
+  \sd ds8 <b b'>16 <b b'>  <b b'>8 <e, b' g'>\db <c e a e'>\db <a e' c'>\db |
+  \override TextSpanner #'(bound-details left text) = "rit."
+  \textSpannerUp
+  b <b' b'>16 <b b'>  <b b'>8 <e, b' g'>\db^\startTextSpan <c e a e'>\db <a e' c'>\db |
+  b <b' b'>16 <b b'>  <b b'>8 <e, b' g'>\db <c e a e'>\db <a e' c'>\db\sn | %160
+  <b fs' ds' b'>4\stopTextSpan b~\db\fermata  b16 cs32 ds e fs g a |
+
+  \tempo "Andante"
+
+  b4  a8 g \acciaccatura { e16([ fs g] } fs4)\startTrillSpan~ |
+  fs8\stopTrillSpan\f \times 2/3 { e16( fs \acciaccatura a8 g16) } fs4.^\markup{ \italic rit. } e8-> |
+  e2.->\fermata \bar "|." |
 }
 
 violinB = % breaks
