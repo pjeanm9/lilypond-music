@@ -140,6 +140,42 @@ violin = \relative c'
   e'( g) e d  c g e d  c e g b |
   a( a,) c e  fs a c e  fs a, e'( a,) |
   ds b fs b  ds b fs' ds  b'8 b,(\upbow |
+  e-.) d16 c b8-. a-. g-. fs-. |
+  e16 fs e fs  g a g a  b g' fs e | %110
+  ds fs a, c  b a g fs  a g fs e |
+  ds fs b, as  b cs ds e  fs g a fs |
+  e8\trill\p g16-.( b-.)  e-. b-. g'-. e-.  b'-. g-. e'-. b-. |
+  c8\trill e,16-.( a-.)  c,-. e-. a,-. c-.  e,-. a-. a,-. g'-. |
+  fs8\trill d16-.( fs-.)  a-. d-. fs-. d-.  a'-. fs-. d'-. a-. | %115
+  b8\trill g16-.( b-.)  d,-. g-. b,-. d-.  g,-. b-. g,-. fs'-. |
+  e8\trill c16-.( e-.)  g-. c-. e-. c-.  g'-. e-. c'-. g-. |
+  a8\trill e16-.( a-.)  c,-. e-. a,-. c-.  e,-. a-. c,-. e-. |
+  ds8\trill b16-.( ds-.)  fs-. b-. ds-. b-.  fs'-. ds-. b'-. fs-. |
+  g8\trill e16-.( cs-.)  as-. cs-. as-. g-.  e-. g-. e-. cs-. | %120
+  b8--\f e16( g)  b ds e fs  g b, g' e |
+  d! b' e, c  a' e b g'  e a, fs' e |
+  b,8 e16( g)  b ds e fs  g b, g' e |
+  d! b' e, c  a' e b g'  e a, fs' e |
+  b,8-- e16( g)  b ds e fs  g b, g' e-0 | %125
+  d b' e,-0 c  a' e-0 b g'  e-0 e c' e,-0 |
+  d b' e,-0 c  a' e-0 fs d'  e,-0 e c' e,-0 |
+  d b' e,-0 g  e' e,-0 fs d'  e,-0 e c' e,-0 |
+  a fs' e,-0 g  e' e,-0 fs ds'  e,-0 g e' e,-0 |
+  a fs' e,-0 c'  a' e,-0 b' g'  e,-0 g e' e,-0 | %130
+  b' g' e,-0 a  fs' e,-0 fs d'  e,-0 a fs' e,-0 |
+  g e' e,-0 e  c' e,-0 g e'  e,-0 fs d' e,-0 |
+  d b' e,-0 fs  d' e,-0 e c'  e,-0 c a' e-0 |
+  e c' e,-0 d  b' e,-0 b g'  e-0 d b' e,-0 |
+  c a' e-0 a,  fs' e-0 c a'  e-0 b g' e-0 | %135
+  a, fs' e-0 b  g' e-0 c a'  e-0 b g' e-0 |
+  d b' e,-0 cs  as' e-0 c a'  e-0 b g' e-0 |
+  a,-\tweak #'X-offset #0 -\tweak #'Y-offset #0 \cresc  %% ineffective (prefer ^\cresc)
+  fs' e-0 e  c' e,-0 c a'  e-0 a, fs' e-0 |
+  as, g' e-0 e  cs' e,-0 cs as'  e-0 as, g' e-0 |
+  b gs' e-0 f  d' e,-0 d b'  e,-0 b gs' e-0 | %140
+  c a' e-0 fs!  ds' e,-0 ds c'  e,-0 c a' e-0 |
+  cs as' e-0 g  e' e,-0 e cs'  e,-0 cs as' e-0 |
+  as, g' e-0 g,  e'( cs) cs as  g e cs as\! |
 }
 
 violinB = % breaks

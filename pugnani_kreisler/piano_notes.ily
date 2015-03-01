@@ -131,6 +131,26 @@ pianoR = \relative c
   <g c>2 <c, g' b>4 |
   <c e a>2 <c e fs>4 |
   <b ds fs>2 r4 |
+  <b e g>8. a'16 <b, e b'>8 <c e a> <e g> <b ds fs> |
+  <b e>2 <b e b'>4 | %110
+  <b ds fs> <b fs' a> <b e g> |
+  <b ds fs>4 r r |
+  \override Stem #'direction = #UP
+  <g b e>8 e'16^. fs^.  g8^. g16^. a^. b8^. <e, gs b e>_.\noBeam |
+  \revert Stem #'direction
+  <e a c> <c' e>16^. <b d>^.  <a c>8^. << { c16^. b^. a8^. } \\ { e16 d c8_.} >>  <e a c e>^. |
+  <a, d fs> d16-. e-.  fs8-. <d fs>16-. <e g>-.  <fs a>8-. <d fs a d>-. | %115
+  <d g b> <b' d>16-. <a c>-.  <g b>8 << { b16 a g8 } \\ { d16-. c-. b8} >>  <d g b> |
+  <g, c e> ds'16 e  <c g'>8 g'16 e  << { < g c>8 } \\ { e } >> <c g' c> |
+  <c e a> <c' e>16 <b d>  <a c>8 << { c16 b a8 } \\ { e16 d c8} >>  <e a c> |
+  <b ds fs> b16 cs  ds!8 <b ds>16 <cs e>  <ds fs>8 <b ds fs b> |
+  <cs e g as> << { as'16 b } \\ { g8 } >>  <g as>8 <g cs>16 <b d> <g as cs>8 <g cs e g> | %120
+  \clef bass
+  b,,2.~ |
+  \repeat unfold 21 { b~ }
+  b |
+  \clef treble
+  s2 << { b''4 } \\ { b, } >> | %% no ??
 }
 
 pianoL = \relative c,,
@@ -258,6 +278,35 @@ pianoL = \relative c,,
   <c e>2 <e,, e'>4 |
   <fs fs'>2 <a, a'>4 |
   <b b'>2 r4 |
+  e'8. fs16 g8 a b <b, a'> |
+  <e g>2 <g,, g'>4 | %110
+  <b b'> <ds b'> <e b'> |
+  <b b'>4 r r |
+  \override Stem #'direction = #DOWN
+  <e b'>8 g'16-. b-.  e8-.
+  \change Staff = "upper"
+  e16_. fs_. g8_.
+  \change Staff = "lower"
+  \revert Stem #'direction
+  <e,, e'>_.\noBeam |
+  <a, a'> r r s4 <a a'>8^. |
+  \override Stem #'direction = #DOWN
+  <d  d'>^. fs'16^. a^.  d8^. r r
+  \revert Stem #'direction
+  <d,, d'> | %115
+  <g, g'> r r s4 <g g'>8 |
+  <c c'> fs'!16[ g]  e8 c' r <e,, e'> |
+  <fs, fs'> r r s <fs fs'> s |
+  <b b'> ds'16 fs  b8 r r <b,, b'> |
+  <b b'> cs''16[ d]  cs8 e,16 fs  e8 r | %120
+  \ottava #-1
+  \set Staff.ottavation = #"8"
+  \repeat "tremolo" 8 { b,,32. b' }
+  \repeat unfold 22 {
+    \repeat "tremolo" 8 { b, b' }
+  }
+  << { b2 } \\ { b, } >> s4 | %% no ??
+  \ottava #0
 }
 
 pianoD = % dynamics
@@ -294,6 +343,12 @@ pianoD = % dynamics
   s2.\f
   s2.*3
   s4 s4\p s4
+  s2.*15
+  s8 s8\p s2
+  s2.*7
+  s2.\p
+  s2.*22
+  s2.\f
 }
 
 pianoB = % breaks
