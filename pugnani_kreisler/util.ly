@@ -14,3 +14,19 @@
 {
   #(set-paper-size "a4")
 }
+
+
+%% some defs
+
+ub = \upbow
+db = \downbow
+
+sd = \stemDown
+su = \stemUp
+sn = \stemNeutral
+
+ottEight = {
+  \ottava #-1
+  \set Staff.ottavation = #"8"
+}
+ottZero = \ottava #0
