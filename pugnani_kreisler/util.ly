@@ -8,13 +8,21 @@
   composer = "G. Pugnani - Kreisler"
 }
 
-\layout {}
+\layout
+{
+  #(layout-set-staff-size 20)
+}
 
 \paper
 {
   #(set-paper-size "a4")
+  top-margin = 6\mm
+  bottom-margin = 7\mm
+  line-width = 183\mm
+  markup-system-spacing #'basic-distance = #20
+  system-system-spacing #'basic-distance = #13
+  min-systems-per-page = 5
 }
-
 
 %% some defs
 

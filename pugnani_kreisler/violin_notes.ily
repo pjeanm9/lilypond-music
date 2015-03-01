@@ -209,4 +209,7 @@ violinB = % breaks
   s1*22
   s2.*15\break % Tempo I
   s1*23\pageBreak % Allegro
+  s8
+  s2.*33\pageBreak
+  s2.*31\pageBreak
 }

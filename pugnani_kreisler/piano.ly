@@ -12,7 +12,7 @@
   <<
     \new Staff \with
     {
-      fontSize = #-2
+      fontSize = #-3
     }
     \violin
 

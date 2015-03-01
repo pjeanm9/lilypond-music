@@ -379,7 +379,9 @@ pianoD = % dynamics
   s8 s8\p s2
   s2.*7
   s2.\p % cadenza
-  s2.*22
+  s2.*20
+  s2 s8 s8^\markup{ \italic cresc. molto }
+  s2.
   s4\f s2
   s2.*3
   s4\ff s2
@@ -391,7 +393,11 @@ pianoD = % dynamics
 
 pianoB = % breaks
 {
-  s1*22\pageBreak % Andante
+  s1*5\break
+  s1*6\break
+  s1*5\break
+  s1*3\noBreak
+  s1*3\pageBreak % Andante
   s2.*15\break % Tempo I
   s1*23\break % Allegro
   s8
