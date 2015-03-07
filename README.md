@@ -14,3 +14,6 @@ __Niccolò Paganini__
 * Caprices for solo violin, op.1
  - n°13 in G minor
  - n°16 in G minor
+
+__Sergei Prokofiev__
+* Sonata for solo violin, op.115 in D major
